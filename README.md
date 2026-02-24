@@ -1,5 +1,5 @@
-# Enterprise-Infrastructure-Blue-Team-Lab
-## Overview
+## Enterprise-Infrastructure-Blue-Team-Lab
+# Overview
 
 Ce repository documente la mise en place d’une infrastructure complète orientée détection, supervision et sécurisation d’un système d’information.
 
@@ -14,8 +14,8 @@ L’objectif est de reproduire une architecture d’entreprise réaliste intégr
 
 Ce laboratoire s’inscrit dans une démarche Blue Team : prévention, détection, analyse et réponse aux incidents.
 
-## Architecture
-# Environnement
+# Architecture
+## Environnement
 
 Infrastructure déployée en environnement virtualisé :
 
@@ -28,37 +28,37 @@ Infrastructure déployée en environnement virtualisé :
   
 Objectif : simuler un système d’information d’entreprise avec contrôle des flux et journalisation centralisée.
 
-## Infrastructure Core Services
-# DHCP Server
+# Infrastructure Core Services
+## DHCP Server
 - Attribution dynamique des adresses IP
 - Configuration des passerelles et DNS
 - Gestion des plages d’adressage
 - Analyse des baux
   
-# Impact sécurité
+## Impact sécurité
 - Contrôle des équipements autorisés
 - Surveillance des connexions réseau
 
-## DNS Server
+# DNS Server
 - Zones internes
 - Résolution locale sécurisée
 - Intégration avec Active Directory
 - Diagnostic via dig / nslookup
 
-# Impact sécurité
+## Impact sécurité
 - Prévention des résolutions non autorisées
 - Cohérence des services internes
 
-## NTP Server
+# NTP Server
 - Synchronisation centralisée
 - Configuration chrony / ntpd
 
-# Importance Blue Team
+## Importance Blue Team
 - Corrélation fiable des logs
 - Intégrité temporelle pour investigation
 
-## Windows Server & Identity Management
-#Active Directory
+# Windows Server & Identity Management
+## Active Directory
 - Déploiement d’un contrôleur de domaine
 - Création d’OU
 - Gestion des utilisateurs et groupes
@@ -66,15 +66,15 @@ Objectif : simuler un système d’information d’entreprise avec contrôle des
 - Politique de mot de passe renforcée
 - Permissions NTFS et partages sécurisés
 - 
-# Approche sécurité
+## Approche sécurité
 
 - Principe du moindre privilège
 - Séparation des rôles
 - Restriction des accès administratifs
 - Journalisation des événements AD
 
-## Linux Servers Hardening
-# Services installés
+# Linux Servers Hardening
+## Services installés
 
 - SSH sécurisé (authentification par clé, désactivation root)
 - Apache / Nginx
@@ -82,7 +82,7 @@ Objectif : simuler un système d’information d’entreprise avec contrôle des
 - MySQL
 - FTP configuré avec isolation
 
-# Mesures de durcissement
+## Mesures de durcissement
 
 - Configuration firewall (UFW / iptables)
 - Restriction des ports exposés
@@ -90,9 +90,9 @@ Objectif : simuler un système d’information d’entreprise avec contrôle des
 - Surveillance des logs système
 - Mise à jour régulière des paquets
 
-## Network Security
-# pfSense Firewall
-# Configuration
+# Network Security
+## pfSense Firewall
+## Configuration
 
 - NAT
 - Règles firewall granulaires
@@ -100,37 +100,37 @@ Objectif : simuler un système d’information d’entreprise avec contrôle des
 - VPN IPsec
 - WireGuard
 
-# Objectif Blue Team
+## Objectif Blue Team
 
 - Contrôle des flux inter-segments
 - Réduction de la surface d’attaque
 - Isolation des services critiques
 - Journalisation des connexions
 
-## Monitoring & Log Management
-# Wazuh (SIEM / HIDS)
+# Monitoring & Log Management
+## Wazuh (SIEM / HIDS)
 
 - Déploiement d’agents
 - Surveillance d’intégrité des fichiers
 - Détection d’anomalies
 - Alertes sur événements critiques
 
-# Graylog
+#" Graylog
 
 - Centralisation des logs
 - Corrélation d’événements
 - Analyse en temps réel
 - Création de dashboards
 
-# Compétences développées
+## Compétences développées
 
 - Lecture et interprétation de logs
 - Détection d’activités suspectes
 - Analyse post-incident
 - Corrélation multi-sources
 
-## Network Analysis & Threat Detection
-# Outils utilisés
+# Network Analysis & Threat Detection
+## Outils utilisés
 
 - Nmap
 - Wireshark
@@ -138,14 +138,14 @@ Objectif : simuler un système d’information d’entreprise avec contrôle des
 - Scan de services
 - Analyse TCP / UDP / DNS
 
-# Approche Blue Team
+## Approche Blue Team
 
 - Identification des services exposés
 - Détection d’anomalies réseau
 - Surveillance du trafic interne
 
-## Cryptography & Secure Communications
-# Implémentation
+# Cryptography & Secure Communications
+## Implémentation
 
 - TLS
 - Certificats
@@ -153,31 +153,31 @@ Objectif : simuler un système d’information d’entreprise avec contrôle des
 - GPG (chiffrement & signature)
 - IPsec
 
-# Objectif
+## Objectif
 
 - Protection des données en transit
 - Vérification d’intégrité
 - Sécurisation des communications internes
 
-## Virtualization & Containerization
-# Virtualisation
+# Virtualization & Containerization
+## Virtualisation
 
 - VirtualBox / VMware
 - Création d’environnements isolés
 
-# Conteneurisation
+## Conteneurisation
 
 - Docker
 - Docker Compose
 - Conteneurisation de services
 
-# Objectif sécurité
+## Objectif sécurité
 
 - Isolation des applications
 - Reproductibilité des environnements
 - Tests d’attaque en laboratoire contrôlé
 
-## Blue Team Skills Developed
+# Blue Team Skills Developed
 
 - Administration Windows Server & Active Directory
 - Durcissement Linux
@@ -189,7 +189,7 @@ Objectif : simuler un système d’information d’entreprise avec contrôle des
 - Compréhension des techniques d’attaque courantes
 - Investigation post-incident
 
-## Security Mindset
+# Security Mindset
 
 Ce laboratoire est conçu avec une approche défensive :
 
