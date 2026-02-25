@@ -65,7 +65,7 @@ Objectif : simuler un système d’information d’entreprise avec contrôle des
 - GPO (stratégies de sécurité)
 - Politique de mot de passe renforcée
 - Permissions NTFS et partages sécurisés
-- 
+  
 ## Approche sécurité
 
 - Principe du moindre privilège
